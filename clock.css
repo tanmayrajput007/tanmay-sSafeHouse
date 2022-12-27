@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+   
+}
+
+
+.dial {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image:radial-gradient(rgb(255, 0, 0),  rgb(52, 255, 52) , blue , rgb(255, 33, 70));
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 100px  rgb(3, 163, 255);
+    animation: dial 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dial {
+    0%{background-image: radial-gradient(red , rgb(0, 195, 255) , blue)}
+    50%{background-image:radial-gradient(rgb(220, 219, 226),  rgb(214, 104, 14) , blue , rgb(255, 33, 70)) ;}
+    100%{background-image: radial-gradient(rgb(33, 12, 6) rgb(14, 255, 58) rgb(255, 139, 159) yellow rgb(87, 87, 255));}
+}
+
+
+
+.needle{
+    border-radius: 28%;
+    top: 141px;
+    position: relative;
+    width: 266px;
+    height: 5px;
+    background-color: rgba(255, 255, 0, 0);
+    left: 17px;
+    animation: rotation 70s infinite linear;   
+}
+.patch{
+    width: 137px;
+    height: 5px;
+    background-color:rgb(251, 255, 0);
+    border-radius: 20px;
+}
+
+
+
+@keyframes rotation {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+.needle2{
+    border-radius: 28%;
+    top: 141px;
+    position: absolute;
+    z-index: 3;
+    width: 266px;
+    height: 5px;
+    background-color: rgba(255, 255, 0, 0);
+    left: 17px;
+    animation: rotation2 3600s infinite linear;   
+}
+
+@keyframes rotation2 {
+    0%{transform: rotate(-360deg);}
+}
+
+.centredot{
+    z-index: 5;
+    top: 132px;
+    height: 26px;
+    width: 27px;
+    background-color: yellow;
+    position: absolute;
+    left: 137px;
+    border-radius: 50%;
+}
+
+.numbering{
+    position: absolute;
+    font-size: 25px;
+}
+
+.a{
+    top: 13px;
+    position: relative;
+    left: 201px;
+}
+
+.b{
+    top: 36px;
+    position: relative;
+    left: 255px;
+}
+
+.c{
+   
+    top: 75px;
+    position: relative;
+    left: 280px;
+
+}
+
+.d{
+    top: 117px;
+    position: relative;
+    left: 255px;
+}
+
+.e{
+    top: 146px;
+    position: relative;
+    left: 200px;
+}
+
+.f{
+    top: 130px;
+    position: relative;
+    left: 143px;
+
+}
+
+.g{
+    top: 81px;
+    position: relative;
+    left: 72px;
+}
+
+.h{
+    top: 3px;
+    position: relative;
+    left: 29px;
+}
+
+.i{
+    top: -100px;
+    position: relative;
+    left: 8px;
+}
+
+.j{
+    top: -194px;
+    position: relative;
+    left: 23px;
+}
+
+.k{
+    top: -277px;
+    position: relative;
+    left: 78px;
+}
+
+.l{
+    top: -317px;
+    position: relative;
+    left: 136px;
+}
+
+
+
+  
+
+
